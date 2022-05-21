@@ -9,7 +9,6 @@ Durante o projeto, são utilizadas as seguintes ferramentas e tecnologias:
 
 * Java 11 
 * Biblioteca HiveMQ Client para Java
-* Spring Security
 * Princípios de POO
 * Protocolo MQTT
 * IntelliJ IDEA
