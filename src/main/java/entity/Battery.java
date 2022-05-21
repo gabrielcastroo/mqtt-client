@@ -1,11 +1,12 @@
 package entity;
 
 import java.util.UUID;
+import java.util.Random;
 
 public class Battery {
 
     String id = UUID.randomUUID().toString();
-    String soc = "State of Charge: 100%";
+    int soc = new Random().nextInt(100)+1;
 
     public Battery() {
         this.id = UUID.randomUUID().toString();
@@ -20,11 +21,11 @@ public class Battery {
         this.id = id;
     }
 
-    public String getSoc() {
+    public int getSoc() {
         return soc;
     }
 
-    public void setSoc(String soc) {
+    public void setSoc(int soc) {
         this.soc = soc;
     }
 }

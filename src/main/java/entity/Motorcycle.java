@@ -14,6 +14,14 @@ public class Motorcycle {
         this.dataPackage = dataPackage;
     }
 
+    public String getChassi() {
+        return chassi;
+    }
+
+    public void setChassi(String chassi) {
+        this.chassi = chassi;
+    }
+
     public DataPackage getDataPackage() {
         return new DataPackage();
     }

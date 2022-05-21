@@ -3,7 +3,6 @@ import com.hivemq.client.mqtt.MqttClient;
 import com.hivemq.client.mqtt.mqtt5.Mqtt5BlockingClient;
 import entity.DataPackage;
 import entity.Motorcycle;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import static com.hivemq.client.mqtt.MqttGlobalPublishFilter.ALL;
@@ -11,10 +10,10 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 
 public class MyMqttMain {
 
-
     public static void main(String[] args) throws Exception {
 
         Motorcycle moto = new Motorcycle();
+        String chassi = moto.getChassi();
         DataPackage motoDataPackage = moto.getDataPackage();
         ObjectMapper mapper = new ObjectMapper();
         String json = mapper.writeValueAsString(motoDataPackage);
@@ -42,9 +41,9 @@ public class MyMqttMain {
 
         System.out.println("Connected successfully");
 
-        //subscribe to the topic "my/test/topic"
+        //subscribe to the topic
         client.subscribeWith()
-                .topicFilter("bike/telemetry/")
+                .topicFilter("bike/telemetry/#")
                 .send();
 
         //set a callback that is called when a message is received (using the async API style)
@@ -57,7 +56,7 @@ public class MyMqttMain {
 
         //publish a message to the topic "my/test/topic"
         client.publishWith()
-                .topic("bike/telemetry/")
+                .topic("bike/telemetry/${chassi}")
                 .payload(UTF_8.encode(json))
                 .send();
     }
