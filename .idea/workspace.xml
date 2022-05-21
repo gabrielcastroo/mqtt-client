@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41891165-565a-4b29-b10e-8a6645bcf032" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyMqttMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyMqttMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Battery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Battery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Motorcycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Motorcycle.java" afterDir="false" />
-    </list>
+    <list default="true" id="41891165-565a-4b29-b10e-8a6645bcf032" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,6 +40,11 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gabri\IdeaProjects\desafio\src\assets" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.MyMqttMain">
     <configuration name="MyMqttMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyMqttMain" />
